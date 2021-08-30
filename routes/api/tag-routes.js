@@ -53,6 +53,7 @@ router.put('/:id', (req, res) => {
     .then((tagUpdate) => {
       res.json(tagUpdate);
     }) 
+    .catch((err) => res.json(err));
 });
 
 router.delete('/:id', (req, res) => {
