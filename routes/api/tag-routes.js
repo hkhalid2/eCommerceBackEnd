@@ -26,7 +26,7 @@ router.get('/:id', async (req, res) => {
     });
 
     if (!tagData) {
-      res.status(404).json({ message: 'No location found with this id!' });
+      res.status(404).json({ message: 'No tag found with this id!' });
       return;
     }
 
@@ -48,6 +48,12 @@ router.post('/', (req, res) => {
 
 router.put('/:id', (req, res) => {
   // update a tag's name by its `id` value
+  Tag.update(
+    {tag_name: req.body.tag_name},
+    {where: {id: req.params.id}})
+    .then((tagUpdate) => {
+      res.json(tagUpdate);
+    }) 
 });
 
 router.delete('/:id', (req, res) => {
