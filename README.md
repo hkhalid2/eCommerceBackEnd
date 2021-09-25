@@ -15,6 +15,15 @@ Dotenv was use for taking used to hide/secure the users information in a .env fi
 
 ``npm i``
 
+## Technologies Used
+* MySQL
+* Sequelize
+* dotenv
+* Express.js
+* Javascript
+* CLI
+
+
 
 ## Usage
 *Log into mysql and source schema
@@ -35,6 +44,9 @@ MIT License
             
 ## Badges
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+## Link to Deployed App
+Not Applicable since this application runs in the commandline. Instead please view Demo Video below to see functioning.
 
 ### Demo Video
 https://drive.google.com/file/d/1zQG4WphSmXeCJuBCwhv2ePaNyU7uTsJ5/view?usp=sharing
